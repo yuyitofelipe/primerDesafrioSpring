@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Persona Info</title>
+</head>
+<body>
+<h1>Welcome to Persona Info Page</h1>
+
+<p> SOLO ES LA ALERTA MIRA LA ALERTA!!! </p>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    var persona = /*[[${persona}]]*/ {};
+    alert(`Nombre: ${persona.nombre}\nApellido: ${persona.apellido}\nEdad: ${persona.edad}`);
+    /*]]>*/
+</script>
+</body>
+</html>
